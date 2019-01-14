@@ -1,0 +1,9 @@
+version: "2"
+services:
+  telegraf:
+    container_name: telegraf_docker
+    image: shukriadams/telegrafdocker
+    restart: unless-stopped
+    volumes: 
+    - /var/run/docker.sock:/var/run/docker.sock    
+    - ./telegraf.conf:/usr/telegraf.conf
