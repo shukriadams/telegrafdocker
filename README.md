@@ -1,5 +1,7 @@
 # Telegraf for docker
 
+https://hub.docker.com/r/shukriadams/telegrafdocker
+
 Spin up telegraf instantly with a docker container. 
 
 ## Start 
