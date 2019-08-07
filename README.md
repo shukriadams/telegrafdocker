@@ -2,17 +2,11 @@
 
 https://hub.docker.com/r/shukriadams/telegrafdocker
 
-Spin up telegraf instantly with a docker container. 
+Spin up telegraf instantly with a docker container. Docker itself is passed into the container, so [[inputs.docker]] is supported.
 
-## Start 
+## Use 
 
-Update telegraf.conf, add plugins and your Influxdb instance. 
-
-To start the container run
+Copy docker-compose.yml and telegraf.conf to your system. Modify telegraf.conf, add the input plugins you want, and your Influxdb 
+instance. Sart the container run
 
     docker-compose up -d
-
-To manually start telegraf run
-
-    telegraf --config telegraf.conf
-
